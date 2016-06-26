@@ -73,7 +73,7 @@
 				<key>runningsubtext</key>
 				<string>Searching...</string>
 				<key>script</key>
-				<string>PATH=$($(echo $SHELL) -ic 'echo $PATH')
+				<string>PATH=/usr/local/bin:$($(echo $SHELL) -ic 'echo $PATH'):$PATH
 node index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -100,17 +100,17 @@ node index.js "$1"</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>81E50DB1-23ED-46C6-BB73-4AA70B96FE96</key>
-		<dict>
-			<key>xpos</key>
-			<integer>10</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
 		<key>785375A5-6E6C-4EDE-8F20-D5B487D19AD2</key>
 		<dict>
 			<key>xpos</key>
 			<integer>150</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>81E50DB1-23ED-46C6-BB73-4AA70B96FE96</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
