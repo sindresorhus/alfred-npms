@@ -103,16 +103,16 @@ node index.js "$1"</string>
 		<key>785375A5-6E6C-4EDE-8F20-D5B487D19AD2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>150</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>10</integer>
 		</dict>
 		<key>81E50DB1-23ED-46C6-BB73-4AA70B96FE96</key>
 		<dict>
 			<key>xpos</key>
-			<integer>70</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>version</key>

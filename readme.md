@@ -2,6 +2,8 @@
 
 > [Alfred 3](https://www.alfredapp.com) workflow to search for npm packages with [npms.io](https://npms.io)
 
+npms.io is a great npm package search with deep analysis of package quality using a myriad of metrics. Much better than the official npmjs.com search.
+
 <img src="screenshot.png" width="694">
 
 
