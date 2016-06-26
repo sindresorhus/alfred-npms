@@ -7,7 +7,7 @@
 
 ## Install
 
-[Install the workflow.](https://github.com/sindresorhus/alfred-npms/releases/latest)
+[Install the workflow.](http://www.packal.org/workflow/npms-0)
 
 *Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
