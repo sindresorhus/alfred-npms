@@ -78,6 +78,9 @@
 eval $(/usr/libexec/path_helper -s)
 export PATH=/usr/local/bin:$($(echo $SHELL) -ic 'echo $PATH'):$PATH
 
+NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"
+
 node index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
