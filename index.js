@@ -10,19 +10,21 @@ got('https://api.npms.io/search', {
 })
 .then(res => {
 	const items = res.body.results
-		.filter(x => x.name.length > 1)
+		.filter(x => x.module.name.length > 1)
 		.map(x => {
+			const module = x.module;
+
 			return {
-				title: x.name,
-				subtitle: x.description,
-				arg: x.links.repository || x.links.npm,
+				title: module.name,
+				subtitle: module.description,
+				arg: module.links.repository || module.links.npm,
 				mods: {
 					alt: {
-						arg: x.links.npm,
+						arg: module.links.npm,
 						subtitle: 'Open the npm page instead of the GitHub repo'
 					}
 				},
-				quicklookurl: x.links.repository && `${x.links.repository}#readme`
+				quicklookurl: module.links.repository && `${module.links.repository}#readme`
 			};
 		});
 
