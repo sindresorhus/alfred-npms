@@ -27,6 +27,7 @@ Press <kbd>Shift</kbd> to view its readme in Quick Look.
 
 - [alfred-emoj](https://github.com/sindresorhus/alfred-emoj) - Find relevant emoji from text
 - [alfred-simple](https://github.com/sindresorhus/alfred-simple) - Simple theme
+- [alfy](https://github.com/sindresorhus/alfy) - Create Alfred workflows with ease
 
 
 ## License

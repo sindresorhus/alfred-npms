@@ -1,10 +1,11 @@
 'use strict';
+const alfy = require('alfy');
 const got = require('got');
 
 got('https://api.npms.io/search', {
 	json: true,
 	query: {
-		term: process.argv[2],
+		term: alfy.input,
 		size: 20
 	}
 })
@@ -28,17 +29,5 @@ got('https://api.npms.io/search', {
 			};
 		});
 
-	console.log(JSON.stringify({items}));
-})
-.catch(err => {
-	console.log(JSON.stringify({
-		items: [{
-			title: err.name,
-			subtitle: err.message,
-			valid: false,
-			text: {
-				copy: err.stack
-			}
-		}]
-	}));
+	alfy.output(items);
 });
