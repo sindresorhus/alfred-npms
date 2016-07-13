@@ -1,16 +1,13 @@
 'use strict';
 const alfy = require('alfy');
-const got = require('got');
 
-got('https://api.npms.io/search', {
-	json: true,
+alfy.fetch('https://api.npms.io/search', {
 	query: {
 		term: alfy.input,
 		size: 20
 	}
-})
-.then(res => {
-	const items = res.body.results
+}).then(data => {
+	const items = data.results
 		.filter(x => x.module.name.length > 1)
 		.map(x => {
 			const module = x.module;
