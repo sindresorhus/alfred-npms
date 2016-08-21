@@ -9,7 +9,9 @@ npms.io is a great npm package search with deep analysis of package quality usin
 
 ## Install
 
-[Install the workflow.](http://www.packal.org/workflow/npms-0)
+```
+$ npm install -g alfred-npms
+```
 
 *Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
