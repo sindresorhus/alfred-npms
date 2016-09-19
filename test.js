@@ -4,7 +4,7 @@ import alfyTest from 'alfy-test';
 test(async t => {
 	const alfy = alfyTest();
 
-	const result = await alfy('chalk');
+	const result = await alfy('boost-exact:true chalk');  // Ensure chalk is first
 
 	t.deepEqual(result[0], {
 		title: 'chalk',
