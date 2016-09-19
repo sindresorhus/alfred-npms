@@ -24,6 +24,8 @@ Select a package and press <kbd>Enter</kbd> to go to its GitHub repo.<br>
 Hold <kbd>Alt</kbd> when pressing <kbd>Enter</kbd> to go to its npm page.<br>
 Press <kbd>Shift</kbd> to view its readme in Quick Look.
 
+By default, the search is made with `boost-exact:false` by default. You may pass any npms.io [operators](https://api-docs.npms.io/#api-search-query).
+
 
 ## Related
 
