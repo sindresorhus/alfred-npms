@@ -1,5 +1,8 @@
 'use strict';
 const alfy = require('alfy');
+const alfredNotifier = require('alfred-notifier');
+
+alfredNotifier();
 
 // Do not boost exact matches by default, unless specified by the input
 const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} boost-exact:false`;
