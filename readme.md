@@ -32,6 +32,7 @@ The search is made with `boost-exact:false` by default. You may pass any npms.io
 ## Related
 
 - [alfred-emoj](https://github.com/sindresorhus/alfred-emoj) - Find relevant emoji from text
+- [alfred-dark-mode](https://github.com/sindresorhus/alfred-dark-mode) - Toggle the system dark mode
 - [alfred-simple](https://github.com/sindresorhus/alfred-simple) - Simple theme
 - [alfy](https://github.com/sindresorhus/alfy) - Create Alfred workflows with ease
 
