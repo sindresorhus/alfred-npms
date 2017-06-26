@@ -23,6 +23,9 @@ alfy.fetch('https://api.npms.io/v2/search', {
 					alt: {
 						arg: pkg.links.npm,
 						subtitle: 'Open the npm page instead of the GitHub repo'
+					},
+					cmd: {
+						subtitle: `Latest: ${pkg.version}`
 					}
 				},
 				quicklookurl: pkg.links.repository && `${pkg.links.repository}#readme`
