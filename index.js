@@ -25,7 +25,7 @@ alfy.fetch('https://api.npms.io/v2/search', {
 						subtitle: 'Open the npm page instead of the GitHub repo'
 					},
 					cmd: {
-						subtitle: `Latest: ${pkg.version}`
+						subtitle: `Latest: ${pkg.version}  Publisher: ${pkg.publisher.username}  Publish Date: ${(new Date(pkg.date)).toLocaleString()}`
 					}
 				},
 				quicklookurl: pkg.links.repository && `${pkg.links.repository}#readme`
