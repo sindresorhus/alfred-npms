@@ -32,7 +32,8 @@
     "alfy"
   ],
   "dependencies": {
-    "alfy": "^0.6.0"
+    "alfy": "^0.6.0",
+    "date-fns": "^2.0.0-alpha.1"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
