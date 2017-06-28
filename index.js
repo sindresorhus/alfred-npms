@@ -1,6 +1,6 @@
 'use strict';
 const alfy = require('alfy');
-const format = require('date-format')
+const format = require('date-format');
 
 // Do not boost exact matches by default, unless specified by the input
 const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} boost-exact:false`;
