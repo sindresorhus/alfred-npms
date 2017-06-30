@@ -9,7 +9,7 @@ test(async t => {
 
 	t.deepEqual(result[0], {
 		title: 'chalk',
-		subtitle: 'Terminal string styling done right. Much color.',
+		subtitle: 'Terminal string styling done right. Much color',
 		arg: 'https://github.com/chalk/chalk',
 		mods:
 		{
