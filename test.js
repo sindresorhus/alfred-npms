@@ -5,6 +5,7 @@ test(async t => {
 	const alfy = alfyTest();
 
 	const result = await alfy('boost-exact:true chalk');  // Ensure chalk is first
+	delete result[0].mods.cmd;
 
 	t.deepEqual(result[0], {
 		title: 'chalk',

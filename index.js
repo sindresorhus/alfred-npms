@@ -1,5 +1,6 @@
 'use strict';
 const alfy = require('alfy');
+const format = require('date-format');
 
 // Do not boost exact matches by default, unless specified by the input
 const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} boost-exact:false`;
@@ -23,6 +24,9 @@ alfy.fetch('https://api.npms.io/v2/search', {
 					alt: {
 						arg: pkg.links.npm,
 						subtitle: 'Open the npm page instead of the GitHub repo'
+					},
+					cmd: {
+						subtitle: `${pkg.version} published at ${format('yyyy-dd-MM', new Date(pkg.date))} by ${(pkg.author && pkg.author.name) || pkg.publisher.username}`
 					}
 				},
 				quicklookurl: pkg.links.repository && `${pkg.links.repository}#readme`
