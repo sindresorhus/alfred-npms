@@ -27,6 +27,10 @@ alfy.fetch('https://api.npms.io/v2/search', {
 					},
 					cmd: {
 						subtitle: `${pkg.version} published at ${dateFormat('yyyy-dd-MM', new Date(pkg.date))} by ${(pkg.author && pkg.author.name) || pkg.publisher.username}`
+					},
+					ctrl: {
+						arg: pkg.name,
+						subtitle: `Paste Package ${pkg.name}`
 					}
 				},
 				quicklookurl: pkg.links.repository && `${pkg.links.repository}#readme`

@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>npms</string>
 	<key>bundleid</key>
 	<string>com.sindresorhus.npms</string>
 	<key>category</key>
@@ -22,10 +20,22 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1D5CCA30-1058-4848-B3BA-52862B065B7C</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>disabled</key>
 	<false/>
+	<key>name</key>
+	<string>npms</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -52,6 +62,10 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -90,15 +104,39 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>1D5CCA30-1058-4848-B3BA-52862B065B7C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>1D5CCA30-1058-4848-B3BA-52862B065B7C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>180</integer>
+			<key>ypos</key>
+			<integer>130</integer>
+		</dict>
 		<key>785375A5-6E6C-4EDE-8F20-D5B487D19AD2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>180</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
