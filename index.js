@@ -30,7 +30,7 @@ alfy.fetch('https://api.npms.io/v2/search', {
 					},
 					ctrl: {
 						arg: pkg.name,
-						subtitle: `Paste Package ${pkg.name}`
+						subtitle: `Copy Package ${pkg.name}`
 					}
 				},
 				quicklookurl: pkg.links.repository && `${pkg.links.repository}#readme`
