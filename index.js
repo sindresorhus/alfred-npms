@@ -1,6 +1,7 @@
 'use strict';
 const alfy = require('alfy');
-const dateFormat = require('date-format');
+
+const cmdSubtitle = require('./source/cmd-subtitle');
 
 // Do not boost exact matches by default, unless specified by the input
 const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} boost-exact:false`;
@@ -26,7 +27,7 @@ alfy.fetch('https://api.npms.io/v2/search', {
 						subtitle: 'Open the npm page instead of the GitHub repo'
 					},
 					cmd: {
-						subtitle: `${pkg.version} published at ${dateFormat('yyyy-dd-MM', new Date(pkg.date))} by ${(pkg.author && pkg.author.name) || pkg.publisher.username}`
+						subtitle: cmdSubtitle(pkg)
 					}
 				},
 				quicklookurl: pkg.links.repository && `${pkg.links.repository}#readme`
