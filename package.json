@@ -38,6 +38,7 @@
   "devDependencies": {
     "alfy-test": "^0.3.0",
     "ava": "*",
+    "semver-regex": "^2.0.0",
     "xo": "*"
   }
 }
