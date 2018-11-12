@@ -1,12 +1,14 @@
+'use strict';
 const dateFormat = require('date-format');
 
 /**
- * @param {object} pgk - A single package from the npms API
- * @returns {string} - The command-modifier subtitle for the package
+ * @param {object} pkg - A single package from the npms API
+ * @returns {string} The command-modifier subtitle for the package
  */
-const cmdSubtitle = ({author, date, publisher, version}) => {
+module.exports = ({author, date, publisher, version}) => {
 	let subtitle = `${version}`;
 
+	// TODO: Behind an if-statement of https://github.com/npms-io/npms-api/issues/82
 	if (date) {
 		subtitle += ` published at ${dateFormat('yyyy-dd-MM', new Date(date))}`;
 	}
@@ -19,5 +21,3 @@ const cmdSubtitle = ({author, date, publisher, version}) => {
 
 	return subtitle;
 };
-
-module.exports = cmdSubtitle;

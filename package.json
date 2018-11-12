@@ -1,44 +1,45 @@
 {
-  "name": "alfred-npms",
-  "version": "1.1.0",
-  "description": "Alfred 3 workflow to search for npm packages with npms.io",
-  "license": "MIT",
-  "repository": "sindresorhus/alfred-npms",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava",
-    "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
-  },
-  "files": [
-    "index.js",
-    "icon.png",
-    "info.plist"
-  ],
-  "keywords": [
-    "npm",
-    "npms",
-    "npmjs",
-    "alfred",
-    "alfred-workflow",
-    "workflow",
-    "alfy"
-  ],
-  "dependencies": {
-    "alfy": "^0.6.0",
-    "date-format": "^1.1.0"
-  },
-  "devDependencies": {
-    "alfy-test": "^0.3.0",
-    "ava": "*",
-    "semver-regex": "^2.0.0",
-    "xo": "*"
-  }
+	"name": "alfred-npms",
+	"version": "1.1.0",
+	"description": "Alfred 3 workflow to search for npm packages with npms.io",
+	"license": "MIT",
+	"repository": "sindresorhus/alfred-npms",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava",
+		"postinstall": "alfy-init",
+		"preuninstall": "alfy-cleanup"
+	},
+	"files": [
+		"index.js",
+		"source",
+		"icon.png",
+		"info.plist"
+	],
+	"keywords": [
+		"npm",
+		"npms",
+		"npmjs",
+		"alfred",
+		"alfred-workflow",
+		"workflow",
+		"alfy"
+	],
+	"dependencies": {
+		"alfy": "^0.8.0",
+		"date-format": "^2.0.0"
+	},
+	"devDependencies": {
+		"alfy-test": "^0.3.0",
+		"ava": "^0.25.0",
+		"semver-regex": "^2.0.0",
+		"xo": "^0.23.0"
+	}
 }

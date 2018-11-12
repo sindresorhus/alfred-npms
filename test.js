@@ -2,7 +2,7 @@ import test from 'ava';
 import alfyTest from 'alfy-test';
 import semverRegex from 'semver-regex';
 
-test(async t => {
+test('main', async t => {
 	const alfy = alfyTest();
 
 	const result = await alfy('boost-exact:true chalk'); // Ensure chalk is first
