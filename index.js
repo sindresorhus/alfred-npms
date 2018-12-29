@@ -31,7 +31,7 @@ const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} bo
 						subtitle: cmdSubtitle(pkg)
 					},
 					ctrl: {
-						// arg: pkg.name,
+						arg: pkg.name,
 						subtitle: `Copy Package Name: ${pkg.name}`
 					}
 				},
