@@ -1,20 +1,22 @@
 'use strict';
 const alfy = require('alfy');
-const dateFormat = require('date-format');
+const cmdSubtitle = require('./source/cmd-subtitle');
 
 // Do not boost exact matches by default, unless specified by the input
 const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} boost-exact:false`;
 
-alfy.fetch('https://api.npms.io/v2/search', {
-	query: {
-		q,
-		size: 20
-	}
-}).then(data => {
+(async () => {
+	const data = await alfy.fetch('https://api.npms.io/v2/search', {
+		query: {
+			q,
+			size: 20
+		}
+	});
+
 	const items = data.results
-		.filter(x => x.package.name.length > 1)
-		.map(x => {
-			const pkg = x.package;
+		.filter(result => result.package.name.length > 1)
+		.map(result => {
+			const pkg = result.package;
 
 			return {
 				title: pkg.name,
@@ -26,11 +28,11 @@ alfy.fetch('https://api.npms.io/v2/search', {
 						subtitle: 'Open the npm page instead of the GitHub repo'
 					},
 					cmd: {
-						subtitle: `${pkg.version} published at ${dateFormat('yyyy-dd-MM', new Date(pkg.date))} by ${(pkg.author && pkg.author.name) || pkg.publisher.username}`
+						subtitle: cmdSubtitle(pkg)
 					},
 					ctrl: {
 						arg: pkg.name,
-						subtitle: `Copy Package ${pkg.name}`
+						subtitle: `Copy Package Name: ${pkg.name}`
 					}
 				},
 				quicklookurl: pkg.links.repository && `${pkg.links.repository}#readme`
@@ -38,4 +40,4 @@ alfy.fetch('https://api.npms.io/v2/search', {
 		});
 
 	alfy.output(items);
-});
+})();

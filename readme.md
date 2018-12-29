@@ -4,7 +4,7 @@
 
 npms.io is a great npm package search with deep analysis of package quality using a myriad of metrics. Much better than the official npmjs.com search.
 
-<img src="media/screenshot.png" width="694">
+<img src="media/screenshot.png" width="694" height="440">
 
 
 ## Install
@@ -13,7 +13,7 @@ npms.io is a great npm package search with deep analysis of package quality usin
 $ npm install --global alfred-npms
 ```
 
-*Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
+*Requires [Node.js](https://nodejs.org) 8+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
 
 ## Usage
@@ -27,7 +27,7 @@ Press <kbd>Shift</kbd> to view its readme in Quick Look.
 
 The search is made with `boost-exact:false` by default. You may pass any npms.io [operators](https://api-docs.npms.io/#api-search-query).
 
-<img src="media/screenshot2.png" width="694">
+<img src="media/screenshot2.png" width="694" height="440">
 
 
 ## Related

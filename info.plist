@@ -32,10 +32,6 @@
 			</dict>
 		</array>
 	</dict>
-	<key>createdby</key>
-	<string>Sindre Sorhus</string>
-	<key>description</key>
-	<string>Alfred 3 workflow to search for npm packages with npms.io</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -152,9 +148,5 @@
 			<integer>10</integer>
 		</dict>
 	</dict>
-	<key>version</key>
-	<string>1.1.0</string>
-	<key>webaddress</key>
-	<string>https://github.com/sindresorhus/alfred-npms#readme</string>
 </dict>
 </plist>
