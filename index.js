@@ -29,6 +29,10 @@ const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} bo
 					},
 					cmd: {
 						subtitle: cmdSubtitle(pkg)
+					},
+					ctrl: {
+						arg: pkg.name,
+						subtitle: 'Copy package name'
 					}
 				},
 				quicklookurl: pkg.links.repository && `${pkg.links.repository}#readme`
@@ -37,4 +41,3 @@ const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} bo
 
 	alfy.output(items);
 })();
-
