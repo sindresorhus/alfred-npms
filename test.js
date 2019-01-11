@@ -12,15 +12,12 @@ test('main', async t => {
 		title: 'chalk',
 		subtitle: 'Terminal string styling done right',
 		arg: 'https://github.com/chalk/chalk',
-		mods:
-		{
-			alt:
-			{
+		mods: {
+			alt: {
 				arg: 'https://www.npmjs.com/package/chalk',
 				subtitle: 'Open the npm page instead of the GitHub repo'
 			},
-			ctrl:
-			{
+			ctrl: {
 				arg: 'chalk',
 				subtitle: 'Copy package name'
 			}
