@@ -22,7 +22,7 @@ test('main', async t => {
 			ctrl:
 			{
 				arg: 'chalk',
-				subtitle: 'Copy Package Name: chalk'
+				subtitle: 'Copy package name'
 			}
 		},
 		quicklookurl: 'https://github.com/chalk/chalk#readme'
