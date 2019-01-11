@@ -32,7 +32,7 @@ const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} bo
 					},
 					ctrl: {
 						arg: pkg.name,
-						subtitle: `Copy Package Name: ${pkg.name}`
+						subtitle: `Copy package name`
 					}
 				},
 				quicklookurl: pkg.links.repository && `${pkg.links.repository}#readme`
