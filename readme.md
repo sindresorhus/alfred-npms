@@ -23,7 +23,7 @@ In Alfred, type `npm`, <kbd>Enter</kbd>, and your query, to search for packages.
 Select a package and press <kbd>Enter</kbd> to go to its GitHub repo.<br>
 Hold <kbd>Alt</kbd> when pressing <kbd>Enter</kbd> to go to its npm page.<br>
 Hold <kbd>Command</kbd> to display additional information.<br>
-Hold <kbd>Ctrl</kbd> to copy the package's name to your clipboard.<br>
+Hold <kbd>Ctrl</kbd> to copy the package name to the clipboard.<br>
 Press <kbd>Shift</kbd> to view its readme in Quick Look.
 
 The search is made with `boost-exact:false` by default. You may pass any npms.io [operators](https://api-docs.npms.io/#api-search-query).
