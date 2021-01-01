@@ -1,4 +1,4 @@
-# alfred-npms [![Build Status](https://travis-ci.org/sindresorhus/alfred-npms.svg?branch=master)](https://travis-ci.org/sindresorhus/alfred-npms)
+# alfred-npms
 
 > [Alfred 3](https://www.alfredapp.com) workflow to search for npm packages with [npms.io](https://npms.io)
 
