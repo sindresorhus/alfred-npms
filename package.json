@@ -1,13 +1,13 @@
 {
 	"name": "alfred-npms",
 	"version": "2.1.0",
-	"description": "Alfred 3 workflow to search for npm packages with npms.io",
+	"description": "Alfred workflow to search for npm packages with npms.io",
 	"license": "MIT",
 	"repository": "sindresorhus/alfred-npms",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
 		"node": ">=8"

@@ -2,9 +2,9 @@
 const dateFormat = require('date-format');
 
 /**
- * @param {object} pkg - A single package from the npms API
- * @returns {string} The command-modifier subtitle for the package
- */
+@param {object} pkg - A single package from the npms API.
+@returns {string} The command-modifier subtitle for the package.
+*/
 module.exports = ({author, date, publisher, version}) => {
 	let subtitle = `${version}`;
 
