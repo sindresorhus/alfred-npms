@@ -15,14 +15,14 @@ test('main', async t => {
 		mods: {
 			alt: {
 				arg: 'https://www.npmjs.com/package/chalk',
-				subtitle: 'Open the npm page instead of the GitHub repo'
+				subtitle: 'Open the npm page instead of the GitHub repo',
 			},
 			ctrl: {
 				arg: 'chalk',
-				subtitle: 'Copy package name'
-			}
+				subtitle: 'Copy package name',
+			},
 		},
-		quicklookurl: 'https://github.com/chalk/chalk#readme'
+		quicklookurl: 'https://github.com/chalk/chalk#readme',
 	});
 });
 

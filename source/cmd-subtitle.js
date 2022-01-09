@@ -1,11 +1,10 @@
-'use strict';
-const dateFormat = require('date-format');
+import dateFormat from 'date-format';
 
 /**
 @param {object} pkg - A single package from the npms API.
 @returns {string} The command-modifier subtitle for the package.
 */
-module.exports = ({author, date, publisher, version}) => {
+export default function cmdSubtitle({author, date, publisher, version}) {
 	let subtitle = `${version}`;
 
 	// TODO: Behind an if-statement because of https://github.com/npms-io/npms-api/issues/82
@@ -20,4 +19,4 @@ module.exports = ({author, date, publisher, version}) => {
 	}
 
 	return subtitle;
-};
+}

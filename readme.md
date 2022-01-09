@@ -8,11 +8,11 @@ npms.io is a great npm package search with deep analysis of package quality usin
 
 ## Install
 
-```
-$ npm install --global alfred-npms
+```sh
+npm install --global alfred-npms
 ```
 
-*Requires [Node.js](https://nodejs.org) 8+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
+*Requires [Node.js](https://nodejs.org) 14+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
 ## Usage
 

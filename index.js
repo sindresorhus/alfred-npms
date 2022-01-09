@@ -1,15 +1,14 @@
-'use strict';
-const alfy = require('alfy');
-const cmdSubtitle = require('./source/cmd-subtitle');
+import alfy from 'alfy';
+import cmdSubtitle from './source/cmd-subtitle.js';
 
 // Do not boost exact matches by default, unless specified by the input
-const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} boost-exact:false`;
+const q = /boost-exact:\S+/.test(alfy.input) ? alfy.input : `${alfy.input} boost-exact:false`;
 
 const data = await alfy.fetch('https://api.npms.io/v2/search', {
 	query: {
 		q,
-		size: 20
-	}
+		size: 20,
+	},
 });
 
 const items = data.results
@@ -24,17 +23,17 @@ const items = data.results
 			mods: {
 				alt: {
 					arg: pkg.links.npm,
-					subtitle: 'Open the npm page instead of the GitHub repo'
+					subtitle: 'Open the npm page instead of the GitHub repo',
 				},
 				cmd: {
-					subtitle: cmdSubtitle(pkg)
+					subtitle: cmdSubtitle(pkg),
 				},
 				ctrl: {
 					arg: pkg.name,
-					subtitle: 'Copy package name'
-				}
+					subtitle: 'Copy package name',
+				},
 			},
-			quicklookurl: pkg.links.repository && `${pkg.links.repository}#readme`
+			quicklookurl: pkg.links.repository && `${pkg.links.repository}#readme`,
 		};
 	});
 

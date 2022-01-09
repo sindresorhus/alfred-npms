@@ -4,13 +4,16 @@
 	"description": "Alfred workflow to search for npm packages with npms.io",
 	"license": "MIT",
 	"repository": "sindresorhus/alfred-npms",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=8"
+		"node": ">=14.13.1"
 	},
 	"scripts": {
 		"test": "xo && ava",
@@ -33,13 +36,13 @@
 		"alfy"
 	],
 	"dependencies": {
-		"alfy": "^0.8.0",
-		"date-format": "^2.0.0"
+		"alfy": "^0.12.2",
+		"date-format": "^3.0.0"
 	},
 	"devDependencies": {
-		"alfy-test": "^0.3.0",
-		"ava": "^1.0.1",
-		"semver-regex": "^2.0.0",
-		"xo": "^0.23.0"
+		"alfy-test": "^0.4.2",
+		"ava": "^4.0.1",
+		"semver-regex": "^4.0.2",
+		"xo": "^0.47.0"
 	}
 }
