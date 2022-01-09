@@ -1,6 +1,6 @@
 {
 	"name": "alfred-npms",
-	"version": "2.1.0",
+	"version": "3.0.0",
 	"description": "Alfred workflow to search for npm packages with npms.io",
 	"license": "MIT",
 	"repository": "sindresorhus/alfred-npms",
